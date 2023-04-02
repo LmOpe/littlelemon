@@ -11,5 +11,16 @@
 <body>
     <h1 style="text-align: center;">Welcome To LittleLemon Restaurant</h1>
     <img src="{% static 'restaurant/logo.png' %}">
+    <table>
+        {% for item in data %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.Title }}</td>
+                <td>{{ item.Price }}</td>
+                <td>{{ item.Inventory }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+        
 </body>
 </html>

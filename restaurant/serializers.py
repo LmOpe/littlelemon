@@ -6,6 +6,7 @@ class MenuSerializer(serializers.ModelSerializer):
     class Meta:
         model = Menu
         fields = ['Title', 'Price', 'Inventory']
+        template_name = 'index.html'
 
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
